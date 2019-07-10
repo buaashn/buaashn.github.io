@@ -96,14 +96,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="（未完待续） JVMjava虚拟机中有几个重要的内存区域。  方法区：存放已经加载的类信息、常量、静态变量以及方法代码的内存区。 常量池：是方法区的一部分，用来存放常量和类中的符号引用等信息。 堆区：存放类的实例化对象。 栈区：是后进先出的栈式结构，存放方法运行时产生的局部变量和方法出口等信息。调用一个方法时，栈区就会创建一个栈帧存放这些数据，当方法调用完成时，栈帧消失，如果在该方法中调用了其他方">
+<meta name="keywords" content="生命周期,类,对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA类与对象的生命周期问题">
+<meta property="og:url" content="http://yoursite.com/2019/07/10/JAVA类与对象的生命周期问题/index.html">
 <meta property="og:site_name" content="草莓的博客">
+<meta property="og:description" content="（未完待续） JVMjava虚拟机中有几个重要的内存区域。  方法区：存放已经加载的类信息、常量、静态变量以及方法代码的内存区。 常量池：是方法区的一部分，用来存放常量和类中的符号引用等信息。 堆区：存放类的实例化对象。 栈区：是后进先出的栈式结构，存放方法运行时产生的局部变量和方法出口等信息。调用一个方法时，栈区就会创建一个栈帧存放这些数据，当方法调用完成时，栈帧消失，如果在该方法中调用了其他方">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-10T03:55:21.614Z">
+<meta property="og:updated_time" content="2019-07-10T06:47:56.910Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="JAVA类与对象的生命周期问题">
+<meta name="twitter:description" content="（未完待续） JVMjava虚拟机中有几个重要的内存区域。  方法区：存放已经加载的类信息、常量、静态变量以及方法代码的内存区。 常量池：是方法区的一部分，用来存放常量和类中的符号引用等信息。 堆区：存放类的实例化对象。 栈区：是后进先出的栈式结构，存放方法运行时产生的局部变量和方法出口等信息。调用一个方法时，栈区就会创建一个栈帧存放这些数据，当方法调用完成时，栈帧消失，如果在该方法中调用了其他方">
 
 
 
@@ -111,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/10/JAVA类与对象的生命周期问题/">
 
 
 
@@ -121,7 +125,7 @@
   };
 </script>
 
-  <title>tags | 草莓的博客</title>
+  <title>JAVA类与对象的生命周期问题 | 草莓的博客</title>
   
 
 
@@ -270,22 +274,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -312,104 +300,222 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/10/JAVA类与对象的生命周期问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sdushn">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="草莓的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+          <h1 class="post-title" itemprop="name headline">JAVA类与对象的生命周期问题
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              12 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              
-                <a href="/tags/View/" style="font-size: 12px; color: #ccc">View</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/java/" style="font-size: 12px; color: #ccc">java</a> <a href="/tags/view/" style="font-size: 12px; color: #ccc">view</a> <a href="/tags/对象/" style="font-size: 12px; color: #ccc">对象</a> <a href="/tags/校招/" style="font-size: 12px; color: #ccc">校招</a> <a href="/tags/生命周期/" style="font-size: 12px; color: #ccc">生命周期</a> <a href="/tags/笔试/" style="font-size: 12px; color: #ccc">笔试</a> <a href="/tags/类/" style="font-size: 12px; color: #ccc">类</a> <a href="/tags/线程安全/" style="font-size: 12px; color: #ccc">线程安全</a> <a href="/tags/规范/" style="font-size: 12px; color: #ccc">规范</a> <a href="/tags/面试/" style="font-size: 12px; color: #ccc">面试</a>
-              
-            </div>
-          </div>
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-10 14:47:03 / Modified: 14:47:56" itemprop="dateCreated datePublished" datetime="2019-07-10T14:47:03+08:00">2019-07-10</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              
+              <span title="Symbols count in article">299</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              
+              <span title="Reading time">1 mins.</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>（未完待续）</p>
+<h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><p>java虚拟机中有几个重要的内存区域。</p>
+<ul>
+<li>方法区：存放已经加载的类信息、常量、静态变量以及方法代码的内存区。</li>
+<li>常量池：是方法区的一部分，用来存放常量和类中的符号引用等信息。</li>
+<li>堆区：存放类的实例化对象。</li>
+<li>栈区：是后进先出的栈式结构，存放方法运行时产生的局部变量和方法出口等信息。调用一个方法时，栈区就会创建一个栈帧存放这些数据，当方法调用完成时，栈帧消失，如果在该方法中调用了其他方法，则继续在栈顶创建新的栈帧。</li>
+<li>本地方法栈：与栈区类似，本地方法栈用于执行本地方法（系统提供的底层方法），栈区用于执行java程序。</li>
+<li>PC寄存器：可以看成是当前线程所执行的字节码的行号指示器。</li>
+<li></li>
+</ul>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/生命周期/" rel="tag"># 生命周期</a>
+          
+            <a href="/tags/类/" rel="tag"># 类</a>
+          
+            <a href="/tags/对象/" rel="tag"># 对象</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/10/Java基本知识-校招笔面试常见问题/" rel="next" title="Java基本知识-校招笔面试常见问题">
+                <i class="fa fa-chevron-left"></i> Java基本知识-校招笔面试常见问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/10/Margin与Padding的区别/" rel="prev" title="Margin与Padding的区别">
+                Margin与Padding的区别 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -438,8 +544,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -549,6 +664,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM"><span class="nav-number">1.</span> <span class="nav-text">JVM</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
