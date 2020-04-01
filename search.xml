@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[IDEA常用快捷键For Mac]]></title>
+    <url>%2F2020%2F04%2F01%2FIDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AEFor%20Mac%2F</url>
+    <content type="text"><![CDATA[查看 Command + 鼠标放在代码上 显示代码简要信息 Command + F1 在错误或警告处显示具体描述信息 Control + J 显示当前位置的变量、方法的 Documentation 内容 自动生成 Command + N, Control + Enter, Control + N 生成代码（getter、setter、构造函数、hashCode/equals,toString） Control + O 覆盖方法（重写父类方法） Control + I 实现方法（实现接口中的方法） 编辑 Command + Option + T 包围代码（使用if..else, try..catch, for, synchronized等包围选中的代码） Command + / 注释/取消注释与行注释 Command + Option + / 注释/取消注释与块注释 Option + 方向键上 连续选中代码块，注意是按代码层级选择代码块 Option + 方向键下 减少当前选中的代码块 Command + X 剪切当前行或选定的块到剪贴板，如果是单行操作，可以无需选中 Command + C 复制当前行或选定的块到剪贴板 Command + Shift + V 从最近的缓冲区粘贴 Command + Option + L 格式化代码 Control + Option + O 优化import Option + 方向键左/右 按单词跳过，向前或向后 Command + 方向键左/右 跳转到行]]></content>
+      <categories>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Margin与Padding的区别]]></title>
     <url>%2F2019%2F07%2F10%2FMargin%E4%B8%8EPadding%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[Margin ：用来设置页面中一个元素所占空间的边缘到相邻元素之间的距离. Padding：用来设置元素内容到元素边界的距离。]]></content>
